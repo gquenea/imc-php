@@ -22,11 +22,15 @@
         <input type="password" name="password">
         <button type="submit"> Se connecter</button>
       </form>
+      <a class="btn btn-info me-3" href="?type=user&action=signUp">Créer un compte</a>
+      
     <?php } else { ?>
       <a class="btn btn-danger" href="?type=user&action=signOut">Se deconnecter</a>
       <a href="?type=user&action=profil"><img src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="profil" width="50px"></a>
+      <a class="btn btn-info" href="?type=imc&action=create">Calculer son IMC</a>
     <?php } ?>
-    <a class="btn btn-info me-3" href="?type=user&action=signUp">Créer un compte</a>
+    <a class="btn btn-info me-3" href="?type=imc&action=index">Voir tous les imc</a>
+    
 
   </nav>
   <h1 class="text-center"><?= $pageTitle ?></h1>
@@ -38,7 +42,7 @@
   </div>
 
   <div class="container">
-    <?php var_dump($_SESSION) ?>
+    
 
     <?= $pageContent ?>
 
