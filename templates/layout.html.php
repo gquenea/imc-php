@@ -13,7 +13,7 @@
 <body>
 
   <nav class="navbar nav-expand-lg navbar-light bg-dark mb-5">
-    <a href="/hb/imc-php" class="navbar-brand ms-3">Imc Php</a>
+    <a href="/imc-php" class="navbar-brand ms-3">Imc Php</a>
 
     <?php if (!isset($_SESSION['user'])) {
     ?>

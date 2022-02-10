@@ -72,7 +72,7 @@ class Imc extends AbstractModel
     public function save(Imc $imc) {
 
 
-       $sql = $this->pdo->prepare("INSERT INTO {$this->nomDeLaTable} (taille, poids, resultat, user_id) VALUES (:taille, :poids,   :resultat, :user_id)");
+       $sql = $this->pdo->prepare("INSERT INTO {$this->nomDeLaTable} (taille, poids, resultat, user_id) VALUES (:taille, :poids, :resultat, :user_id)");
 
 
         $sql->execute([
